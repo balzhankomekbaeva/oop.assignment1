@@ -42,7 +42,7 @@ public class Shape {
         for (int i = 0; i < points.size() - 1; i++) {
             totalSideLength += points.get(i).distanceTo(points.get(i + 1));
         }
-        totalSideLength += points.get(points.size() - 1).distanceTo(points.get(0)); // Closing the shape
+        totalSideLength +=points.get(points.size() - 1).distanceTo(points.get(0)); // Closing the shape
         return totalSideLength / points.size();
     }
 }
